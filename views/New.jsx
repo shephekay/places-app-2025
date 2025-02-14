@@ -23,27 +23,29 @@ class New extends Component {
                   Name: <input type="text" name="name" /><br/>
                   Description: <textarea name="description" /><br/>
                   
-                  Quadrant: <br/>
-                  <input type="radio" name="quadrant" value="North"/> North <br/>
-                  <input type="radio" name="quadrant" value="Northeast"/> Northeast<br/>
-                  <input type="radio" name="quadrant" value="Southeast"/> Southeast<br/>
-                  <input type="radio" name="quadrant" value="Northwest"/> Northwest<br/>
-                  <input type="radio" name="quadrant" value="Southwest"/> Southwest<br/>
-                  <input type="radio" name="quadrant" value="Elsewhere"/> Elsewhere<br/>
+                  Quadrant:
+                  <select name="quadrant" >
+                    <option value="North">North</option>
+                    <option value="Northeast">Northeast</option>
+                    <option value="Southeast">Southeast</option>
+                    <option value="Southwest">Southwest</option>
+                    <option value="Northwest">Northwest</option>
+                    <option value="Elsewhere">Elsewhere</option>
+                </select>
                   <br/>
                   Image URL: <input type="text" name="image"/> <br/>
                   Website URL: <input type="text" name="website"/> <br/>
                   Street Address:  <input type="text" name="address"/> <br/>
                   Type: <input type="text" name="type" placeholder="Art Gallery, Bar, Restaurant, etc."/> <br/>
                   
-                  <div id="keywords">
+                  {/* <div id="keywords"> */}
                   Keywords: <input type="text" name="keywords" /> <br/>
                   <input type="text" name="keywords" /><br/>
                   <input type="text" name="keywords" /><br/>
                   {/* <button onclick={this.addKeywordInput}>Add another keyword</button> */}
 
-                  <input type="submit" value="Add place"/>
-                  </div>
+                  <input className="submit" type="submit" value="Add place"/>
+                  {/* </div> */}
                   
                </form>
             </div> 
