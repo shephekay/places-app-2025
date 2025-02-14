@@ -35,7 +35,9 @@ class Show extends React.Component {
                     </div>  
 
                     <div className="buttons">                
-                        <a id="edit" href={`/places/edit/${place._id}`}>Edit this location</a>
+                        <form action={`/places/edit/${place._id}`}><button id="edit">Edit this location</button>
+                        </form>
+                        {/* <button id="edit" href={`/places/edit/`}>Edit this location</button> */}
                         <form action={`/places/${place._id}?_method=delete`} method="post">
                         <input type="submit" value="Delete this location"/>
                         </form>

@@ -38,7 +38,7 @@ placeController.post('/', (req, res) => {
 
 //Delete
 placeController.delete('/:id', (req, res) => {
-  console.log(req.params.id)
+  // console.log(req.params.id)
   Place.findByIdAndDelete(req.params.id).then(() => {
     res.redirect('/places')
   })

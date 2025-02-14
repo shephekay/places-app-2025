@@ -7,7 +7,7 @@
     }
    } */
 
-*, *::after, *::before {
+   *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -19,7 +19,8 @@ body {
     --main-font-color: rgb(137, 171, 146);
     --dark-gray: #444;
     --light-gray: #666;
-    background-color: whitesmoke;
+    background-color: burlywood;
+    ;
 }
 /* NAVBAR */
 nav {
@@ -32,6 +33,7 @@ nav {
     padding-top: 10px;
     background-color: #666;
     border-bottom: 2px solid black;
+    border-radius: 0 0 5px 5px;
 }
 
 a, a:hover, .drop-btn:hover, .drop-btn {
@@ -78,7 +80,6 @@ nav .dropdown #is-active {
     text-shadow: none;
 }
 #header, #header a {
-    
     font-size: 2.3rem;
     color: var(--main-font-color);
     background-color: #666;
@@ -98,6 +99,7 @@ nav .dropdown #is-active {
 }
 .index .card {
     background-color: var(--main-font-color);
+    /* border: 5px #444; */
     /* width: 250px;
     height: 250px; */
     width: 17rem;
@@ -156,15 +158,19 @@ nav .dropdown #is-active {
 .show .card {
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    /* grid-template-columns: 1fr 3fr; */
+    /* justify-content: center; */
     /* padding: 0 30%; */
     /* border: 2px solid var(--dark-gray); */
-    width: 85vw;
+    /* background-color: whitesmoke; */
+
+    width: 60vw;
+    position: relative;
     
 }
 .show img {
-    max-width: 50vw;
-    max-height: 80vh;
+    max-width: 25vw;
+    max-height: 85vh;
 }
 #gray {
     color: var(--main-font-color);
@@ -174,14 +180,19 @@ nav .dropdown #is-active {
    padding-left: 2rem;
 }  */
 .show .card-right {
-    width: 40vw;
+    /* width: 40vw; */
     padding: 0px 10px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+   /* justify-content: space-between; */
+   align-items: stretch;
 }
 /* .show .row h4{
     display: flex;
 } */
 .show #type {
-    margin-right: 50px;
+    /* margin-right: 50px; */
     font-size: 1.5rem;
     color: var(--main-font-color);
 }
@@ -192,7 +203,7 @@ nav .dropdown #is-active {
     display: flex;
     justify-content: left;
     align-content: center;
-    position: absolute;
+    /* position: absolute; */
     top: 70%;
 }
 .show .keywords p {
@@ -201,24 +212,35 @@ nav .dropdown #is-active {
 .show .keywords a {
     margin: 10px;
     background-color: #888;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     padding: 5px;  
     border-radius: 5px;
 }
 /* .show .keywords . */
 .show .buttons {
+    /* flex-grow: 1; */
+    margin-top: 30px;
     display: flex;
-    position: relative;
-    top: 70%;
+    /* position: relative; */
+    /* top: 70%; */
+    align-items: stretch;
     justify-content: space-between;
+    align-self: flex-end;
+    /* bottom: 0%; */
 } 
-.show .buttons a, .show .buttons input {
+.show .buttons button, .show .buttons input {
     background-color: var(--dark-gray);
     color: var(--main-font-color);
     padding: 8px;
     font-size: 1rem;
-    box-shadow: none;
-    vertical-align: center;
+    box-shadow: 4px 2px ;
+    border-radius: 4px;
+    margin: 30px 0px 0px 30px;
+    /* vertical-align: center; */
+}
+
+.show .buttons button:hover, .show .buttons input:hover{
+    cursor: pointer
 }
 .edit {
     text-align: left;
