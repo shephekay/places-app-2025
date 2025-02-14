@@ -16,12 +16,12 @@ placeController.get('/', (req, res) => {
 
 //Quadrant Index
 placeController.get('/quad/:quadrant', (req, res) => {
-  Place.find({quadrant: req.params.quadrant}, (error, quadPlaces) => {
+  Place.find({quadrant: req.params.quadrant}).then((quadplaces) => {
     res.render('Index',
       {places: quadPlaces,
       title: req.params.quadrant})
+    })
   })
-})
 
 //New
 placeController.get('/new', (req, res) => {
@@ -31,7 +31,7 @@ placeController.get('/new', (req, res) => {
 
 //Create
 placeController.post('/', (req, res) => {
-  Place.create(req.body, (error, createdPlace) => {
+  Place.create(req.body).then((createdPlace) => {
     res.redirect('/places')
   }) 
 })
@@ -39,28 +39,28 @@ placeController.post('/', (req, res) => {
 //Delete
 placeController.delete('/:id', (req, res) => {
   console.log(req.params.id)
-  Place.findByIdAndRemove(req.params.id, (error, data) => {
+  Place.findByIdAndDelete(req.params.id).then(() => {
     res.redirect('/places')
   })
 })
 
 //Show
 placeController.get('/:id', (req, res) => {
-  Place.findById(req.params.id, (error, place) => {
+  Place.findById(req.params.id).then((place) => {
     res.render('Show', {place})
-  })
-})
+  })}
+)
 
 //Edit
 placeController.get('/edit/:id', (req, res) => {
-  Place.findById(req.params.id, (error, place) => {
+  Place.findById(req.params.id).then((place) => {
     res.render('Edit', {place})
   })
 })
 
 //Update
 placeController.put('/edit/:id', (req, res) => {
-  Place.findByIdAndUpdate(req.params.id, req.body, (error, data) => {
+  Place.findByIdAndUpdate(req.params.id, req.body).then((data) => {
     res.redirect('/places')
   })
 })

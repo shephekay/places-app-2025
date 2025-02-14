@@ -4,15 +4,16 @@ const Layout = require('./Layout')
 class Show extends React.Component {
     render() {
         const {place} = this.props
+        console.log(place)
         return (
             <Layout>
             <div className="show">
                 <h1>{place.name}</h1>
-                <div className="card">
+                <div className="card flex-container">
                     
                     
                     <div className="card-left">
-                       {place.image?  <img src={place.image} alt={place.name}/> : <a id="gray" href={`/places/edit/${place._id}`}>Add an image</a>}
+                       {place.image? <img src={place.image} alt={place.name}/> : <a id="gray" href={`/places/edit/${place._id}`}>Add an image</a>}
                     </div>
                    
                     
@@ -29,14 +30,17 @@ class Show extends React.Component {
                             return <a key={index} href="#">{`${keyword} `}</a>
                             
                         })}
-                        </div>  
-                        <div className="buttons">                
-                            <a id="edit" href={`/places/edit/${place._id}`}>Edit this location</a>
-                            <form action={`/places/${place._id}?_method=delete`} method="post">
-                                <input type="submit" value="Delete this location"/>
-                            </form>
-                        </div>
+
+                        
+                    </div>  
+
+                    <div className="buttons">                
+                        <a id="edit" href={`/places/edit/${place._id}`}>Edit this location</a>
+                        <form action={`/places/${place._id}?_method=delete`} method="post">
+                        <input type="submit" value="Delete this location"/>
+                        </form>
                     </div>
+                </div>
                 </div>
             </div>
             </Layout>
