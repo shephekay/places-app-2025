@@ -243,15 +243,29 @@ nav .dropdown #is-active {
     cursor: pointer
 }
 .edit {
+    /* background-color: aliceblue; */
     text-align: left;
+    /* align-items: center; */
     margin: 0 auto;
-    width: fit-content;
     color: var(--dark-gray);
+    width: 40vw;
     font-weight: bold;
+    /* justify-content: center; */
+
 }
 .edit h1 {
     text-align: center;
     margin: 2rem;
+}
+.edit form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* background-color: hsl(0, 0%, 100%); */
+    border: 4px solid hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 .edit textarea {
     font-family: Arial, Helvetica, sans-serif;
@@ -266,4 +280,5 @@ nav .dropdown #is-active {
     /* height: 2rem; */
     font-size: 1rem;
     margin-bottom: 10px;
+    /* align-self: right; */
 }

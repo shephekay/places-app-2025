@@ -44,7 +44,7 @@ class Layout extends React.Component {
                                 <a href="/places/quad/Elsewhere">Elsewhere</a>
                             </div>
                         </div>
-                        <a id="login" href="#">Log in</a>
+                        {/* <a id="login" href="#">Log in</a> */}
 
                     </nav>
 
