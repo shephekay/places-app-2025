@@ -4,7 +4,7 @@ const Layout = require('./Layout')
 class Show extends React.Component {
     render() {
         const {place} = this.props
-        console.log(place)
+        //console.log(place)
         return (
             <Layout>
             <div className="show">
