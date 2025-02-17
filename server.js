@@ -13,14 +13,14 @@ const placeController = require('./controllers/places_controller.js')
 //Port
 //___________________
 
-// Allow use of Heroku's port or your own local port, depending on the environment
+// Allow use of host's port or your own local port, depending on the environment
 const PORT = process.env.PORT || 3000;
 
 //___________________
 //Database
 //___________________
-// How to connect to the database either via heroku or locally
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://spkelley26:kEbhISqT6oekXd8T@cluster1.jifgv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
+// How to connect to the database from environmental variable
+const MONGODB_URI = process.env.MONGODB_URI;
 // Connect to Mongo
 mongoose.connect(MONGODB_URI)
 // mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true });

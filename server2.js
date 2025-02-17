@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-//heroku creates a .env file for us. this line says either use their port, or 3000 if that doesnt exist
+
+//hosting site creates a .env file for us. this line says either use their port, or 3000 if that doesnt exist
 const PORT = process.env.PORT || 3000;
 const db = mongoose.connection
 const show = console.log
