@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 //Database
 //___________________
 // How to connect to the database from environmental variable
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://spkelley26:kEbhISqT6oekXd8T@cluster1.jifgv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
+const MONGODB_URI = process.env.MONGODB_URI 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI)
 // mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true });
