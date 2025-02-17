@@ -12,7 +12,7 @@ class Index extends React.Component {
         return (
             <Layout>
                 <div className="index">
-                    <h2>{title} Portland</h2>
+                    <h2>{title} All Portland</h2>
                     <div className="container">
                         
                     {places.map((place, index) => {

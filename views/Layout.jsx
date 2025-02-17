@@ -28,9 +28,11 @@ class Layout extends React.Component {
                     <nav>
                         <h1 id="header"><a href="/places">Sheila's Best of Portland</a></h1>
                         <a href="/places">Home</a>
+                        <a href="/places/about">About</a>
                         <a href="/places/new">Add a new place</a>
                         {/* <a href="#" onClick={}>Search by quadrant</a> */}
-                        <div className="dropdown">
+
+                        {/*<div className="dropdown">
                             <button 
                                 className='drop-btn'
                                 onClick={this.toggleActive()}
@@ -44,7 +46,8 @@ class Layout extends React.Component {
                                 <a href="/places/quad/Southwest">Southwest</a>
                                 <a href="/places/quad/Elsewhere">Elsewhere</a>
                             </div>
-                        </div>
+                        </div> */}
+
                         {/* <a id="login" href="#">Log in</a> */}
 
                     </nav>

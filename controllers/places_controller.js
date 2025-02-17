@@ -13,6 +13,10 @@ placeController.get('/', (req, res) => {
       {places: allPlaces})
   })})
 
+//About
+placeController.get('/about', (req, res) => {
+  res.render('About')
+})
 
 //Quadrant Index
 placeController.get('/quad/:quadrant', (req, res) => {
@@ -25,8 +29,7 @@ placeController.get('/quad/:quadrant', (req, res) => {
 
 //New
 placeController.get('/new', (req, res) => {
-  res.render('New',
-  )
+  res.render('New',)
 })
 
 //Create

@@ -319,3 +319,26 @@ nav .dropdown #is-active {
 .edit .submit:hover {
     cursor: pointer
 }
+
+/* ABOUT PAGE */
+.about {
+    margin: auto;
+    width: 60vw;
+    max-width: 720px;
+    text-align: justify;
+}
+
+.about ul {
+    width: fit-content;
+    margin: auto;
+}
+.about a {
+    color: brown;
+}
+.about h3 {
+    text-align: center;
+}
+.about > * {
+    margin: 30px 0;
+}
+
