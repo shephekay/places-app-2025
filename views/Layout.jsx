@@ -20,6 +20,7 @@ class Layout extends React.Component {
                     {/* <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet" /> */}
                     {/* {this.props.styles?  this.props.styles : ''} */}
                     <link rel="stylesheet" href="/css/style.css"/>
+                    <link rel="icon" href='/noun-st-johns-bridge-217895.svg'/>
                     <title>Sheila's Best of Portland</title>
                 </head>
                 <body>
