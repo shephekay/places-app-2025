@@ -3,6 +3,7 @@
 
 Just a little collection of some of my favorite places in Portland. When people come to visit, I'm always at a loss for recommendations, so this is a place I can record not only those, but spots I like and often forget about. Add your own!
  This app was built with Node.js, MongoDB, Mongoose, Express, and React, and adheres to RESTful architecture and the MVC file structure. Vanilla CSS.
+ Hosted with render.com.
 
 Things to fix:
 - Styling of individual place views (show page)
